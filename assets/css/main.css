@@ -1,0 +1,17 @@
+body {
+	font-family: sans-serif;
+	flex-direction: column;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	padding: 40px 0 300px 0;
+	margin: 0;
+}
+.description {
+	font-size: 20px;
+}
+.description b {
+	color: #5FBCFF;
+}

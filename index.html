@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>raiSelection</title>
+	<link rel="stylesheet" href="./assets/css/raiselection.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+	<p class="description">Select <b>without</b> settings</p>
+	<select name="" id="" class="multiselect">
+		<option selected disabled>Car Model</option>
+		<option value="1">Audi</option>
+		<option value="2">BMW</option>
+		<option value="3">LADA</option>
+		<option value="4">Mercedes</option>
+		<option value="5">Tesla</option>
+	</select>
+	<p class="description">Add <b>showSelected</b> setting</p>
+	<select name="" id="" class="multiselect-second">
+		<option selected disabled>Car Model</option>
+		<option value="1">Audi</option>
+		<option value="2">BMW</option>
+		<option value="3">LADA</option>
+		<option value="4">Mercedes</option>
+		<option value="5">Tesla</option>
+	</select>
+	<p class="description">Add <b>removeOnClick</b> setting</p>
+	<select name="" id="" class="multiselect-third">
+		<option selected disabled>Car Model</option>
+		<option value="1">Audi</option>
+		<option value="2">BMW</option>
+		<option value="3">LADA</option>
+		<option value="4">Mercedes</option>
+		<option value="5">Tesla</option>
+	</select>
+	<p class="description">Add <b>theme</b> setting</p>
+	<select name="" id="" class="multiselect-fifth">
+		<option selected disabled>Car Model</option>
+		<option value="1">Audi</option>
+		<option value="2">BMW</option>
+		<option value="3">LADA</option>
+		<option value="4">Mercedes</option>
+		<option value="5">Tesla</option>
+	</select>
+	<p class="description">Add <b>checkboxOrder</b> setting</p>
+	<select name="" id="" class="multiselect-sixth">
+		<option selected disabled>Car Model</option>
+		<option value="1">Audi</option>
+		<option value="2">BMW</option>
+		<option value="3">LADA</option>
+		<option value="4">Mercedes</option>
+		<option value="5">Tesla</option>
+	</select>
+
+
+
+	<script src="./assets/js/raiselection.js"></script>
+	<script src="./assets/js/main.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			raiselect('.multiselect', {
+				showSelected: false,
+				removeOnClick: false,
+				theme: 'light',
+				checkBoxOrder: 0
+			});
+			raiselect('.multiselect-second', {
+				showSelected: true,
+				removeOnClick: false,
+				theme: 'light',
+				checkBoxOrder: 0
+			});
+			raiselect('.multiselect-third', {
+				showSelected: true,
+				removeOnClick: true,
+				theme: 'light',
+				checkBoxOrder: 0
+			});
+			raiselect('.multiselect-fifth', {
+				showSelected: true,
+				removeOnClick: true,
+				theme: 'dark',
+				checkBoxOrder: 0
+			});
+			raiselect('.multiselect-sixth', {
+				showSelected: true,
+				removeOnClick: true,
+				theme: 'dark',
+				checkboxOrder: 0
+			});
+		});
+	</script>
+</body>
+</html>
